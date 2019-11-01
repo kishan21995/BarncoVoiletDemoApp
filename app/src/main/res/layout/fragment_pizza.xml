@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".PizzaFragment">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pizzaa"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        app:cardBackgroundColor="@color/whiteColor"
+        android:layout_width="160dp"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:id="@+id/pizza"
+            android:background="@drawable/pizza"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/addBTN"
+                android:text="21% OFF"
+                android:textColor="@color/whiteColor"
+                android:background="#4caf1b"
+                android:layout_width="70dp"
+                android:layout_marginLeft="40dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:text="Pizza with Tomato and coldrink"
+                android:textColor="@color/black_dark"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs259"
+            android:textSize="16dp"
+            android:textColor="@color/black_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:text="Rs330" />
+
+
+
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/mybutton"
+            android:layout_marginLeft="80dp"
+            android:layout_centerVertical="true"
+            android:layout_width="110dp"
+            app:backGroundColor="@color/brownlight"
+            android:layout_height="30dp">
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceID"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#eefafc"
+        android:layout_marginTop="40dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/navimg">
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price for Club Members: Rs254"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#3baeb4"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/lockIMG"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/ic_lock">
+        </ImageView>
+        <TextView
+            android:text="Unlock Price"
+            android:id="@+id/IMG"
+            android:textSize="12dp"
+            android:textColor="#857C7C"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#d9d9d9"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:text="Unit"
+            android:textColor="@color/black_dark"
+            android:layout_marginLeft="10dp"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/addBTN3"
+                android:text="5 Pices"
+                android:background="@drawable/shadow_button"
+                android:textColor="#E43F3F"
+                android:layout_width="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/addBTN4"
+                android:text="3 Pices"
+                android:background="@drawable/shadow_buttons"
+                android:textColor="@color/black_dark"
+                android:layout_width="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#d9d9d9"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

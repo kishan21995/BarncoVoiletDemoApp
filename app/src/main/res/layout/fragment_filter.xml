@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".FilterFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/browndark"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="Filter"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+
+            android:textColor="@color/whiteColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+
+        <TextView
+            android:text="Reset"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            android:layout_gravity="center"
+            android:textColor="@color/whiteColor"
+            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:text="Sort by"
+        android:textColor="@color/black_dark"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Most Popular"
+        android:textColor="@color/black_dark"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_marginLeft="190dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Price High to low"
+            android:textColor="@color/black_dark"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_marginLeft="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Price Low to High"
+            android:textColor="@color/black_dark"
+            android:textSize="18dp"
+            app:itemTextColor="@drawable/bottom_navigation"
+            app:itemIconTint="@drawable/bottom_navigation"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_marginLeft="156dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Nearest to me"
+        android:textColor="@color/black_dark"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:src="@drawable/ic_check_black_24dp"
+        android:layout_marginLeft="185dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+    <TextView
+        android:text="Cousins"
+        android:textColor="@color/black_dark"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="All"
+            android:textColor="@color/black_dark"
+            android:layout_weight="1"
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:id="@+id/btn2"
+
+            android:text="Fast Food"
+            android:textColor="@color/black_dark"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:id="@+id/btn3"
+
+            android:text="Japnese"
+            android:layout_weight="1"
+
+            android:textColor="@color/black_dark"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Pizza"
+            android:textColor="@color/black_dark"
+            android:layout_weight="1"
+
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:text="American"
+            android:textColor="@color/black_dark"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:text="Thai"
+            android:layout_weight="1"
+
+            android:textColor="@color/black_dark"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Gheek"
+            android:textColor="@color/black_dark"
+            android:layout_weight="1"
+
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:text="Asian"
+            android:textColor="@color/black_dark"
+            android:layout_weight="1"
+
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:text="China"
+            android:layout_weight="1"
+
+            android:textColor="@color/black_dark"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shadow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+   <!-- <com.crystal.crystalrangeseekbar.widgets.BubbleThumbSeekbar
+        android:id="@+id/rangeSeekbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:corner_radius="10"
+        app:min_value="0"
+        app:max_value="100"
+        app:steps="5"
+        app:bar_color="#F7BB88"
+        app:bar_highlight_color="#E07416"
+
+        app:data_type="_integer"/>-->
+
+        <ImageView
+            android:src="@drawable/mapone"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        </ImageView>
+
+    <Button
+        android:text="Track your order"
+        android:textColor="@color/whiteColor"
+
+        android:background="@drawable/buttonshape"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"></Button>
+
+
+
+        <TextView
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
